@@ -86,7 +86,7 @@ public class NewsDAO {
 		Connection conn = open();
 		News n = new News();
 
-		String sql = "select aid, title, img, parsedatetime(date,'yyyy-MM-dd hh:mm:ss') as cdate, content form news where aid=?";
+		String sql = "select aid, title, img, parsedatetime(date,'yyyy-MM-dd hh:mm:ss') as cdate, content from news where aid=?";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		pstmt.setInt(1, aid);
 		ResultSet rs = pstmt.executeQuery();
