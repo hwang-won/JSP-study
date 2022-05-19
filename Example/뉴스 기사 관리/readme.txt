@@ -4,3 +4,5 @@
 뷰 : newsList.jsp, newsView.jsp
 컨트롤러 : NewsController.java
 DB : news(H2 DB)
+
+부트스트랩 사용
